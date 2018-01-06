@@ -11,9 +11,44 @@
         android:layout_height="wrap_content">
 
         <!--Logo-->
-        
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/logo"
+            android:layout_height="@dimen/logo" />
+
         <!--Money-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_action_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--textfield-->
+            <EditText
+                android:inputType="number"
+                android:hint="Thai Bath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
         <!--Exchange button-->
+        <Button
+            android:text="EXchage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
         <!--show rate button-->
+        <Button
+            android:text="Show late"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
     </LinearLayout>
 </RelativeLayout>
